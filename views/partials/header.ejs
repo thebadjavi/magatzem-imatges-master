@@ -1,0 +1,43 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <style>
+.navbar {
+	background-color: #111;
+	padding: 1rem;
+}
+.navbar a {
+	text-decoration: none;
+	color: white;
+	padding: 1rem;
+}.navbar a:hover {
+  background-color:  red;
+  cursor: pointer;
+}
+ a.active {
+	padding-top: 15px;
+	background-color: #075a97;
+	border: 1px solid #333;
+	border-top: none; 
+}
+ 
+  </style>
+ 
+ 
+  <nav id="nav" class="navbar">
+    <a  id="element" href="/">Mostrar Imágenes</a>
+    <a  id="element" href="/form">Añadir Imagen</a>
+   </nav>
+<script>
+  var URLactual = window.location.href;
+
+  aObj = document.getElementById('nav').getElementsByTagName('a');
+  
+  for(i=0;i<aObj.length;i++) { 
+    if(aObj[i].href==URLactual) {
+      aObj[i].className='active';  
+ 
+    }
+   
+  }
+ 
+
+</script>

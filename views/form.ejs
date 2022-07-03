@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <%- include('./partials/head'); %>
+    </head>
+
+    <header>
+        <%- include('./partials/header'); %>
+    </header>
+ 
+
+<body> 
+      
+    <form method="post" action="/form" >
+
+        <!-- Grid -->
+        <div>
+
+            <!-- Markup example 1: input is inside label -->
+            <label for="title">
+                Titulo
+                <input type="text" id="title" name="title" pattern="[a-zA-Z0-9_]+" maxlength="10" placeholder="title" required>
+            </label>
+
+            <label for="url">
+                URL image
+                <input type="url" id="url" name="url"   required>
+            </label>
+
+            <label for="date" >Fecha</label>
+            <input type="date" name="date" required>
+
+        </div>
+         
+        <!-- Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+  
+    <footer>
+        <%- include('./partials/footer'); %>
+    </footer>
+</body>
+ 
